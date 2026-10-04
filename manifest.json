@@ -2,27 +2,61 @@
   "manifest_version": "0.2",
   "name": "aiball-mcp",
   "display_name": "AI Ball — AI football match analysis",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Football match outcome probabilities recorded before kick-off, and the open record of how they turned out.",
   "long_description": "Read-only access to AI Ball's public record. For each match: the model's home / draw / away probabilities as recorded before kick-off, the final score, and whether the most likely outcome happened. For any day, week or the whole record: how many matches went the model's way, next to two baselines on the same matches (always taking the pre-match favourite, and one in three). Misses are counted the same way as hits. No account or API key needed.",
-  "author": { "name": "AI Ball", "url": "https://aiball.samagent.ai/en/?src=mcp" },
+  "author": {
+    "name": "AI Ball",
+    "url": "https://aiball.samagent.ai/en/?src=mcp"
+  },
   "homepage": "https://aiball.samagent.ai/en/?src=mcp",
-  "repository": { "type": "git", "url": "https://github.com/aiballfooty/aiball-mcp" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aiballfooty/aiball-mcp"
+  },
   "documentation": "https://github.com/aiballfooty/aiball-mcp#readme",
   "support": "https://github.com/aiballfooty/aiball-mcp/issues",
   "license": "MIT",
-  "keywords": ["football", "soccer", "match analysis", "probabilities", "open record", "premier league"],
+  "keywords": [
+    "football",
+    "soccer",
+    "match analysis",
+    "probabilities",
+    "open record",
+    "premier league"
+  ],
   "server": {
     "type": "node",
     "entry_point": "src/index.js",
-    "mcp_config": { "command": "node", "args": ["${__dirname}/src/index.js"] }
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/src/index.js"
+      ]
+    }
   },
   "tools": [
-    { "name": "get_daily_record", "description": "Matches for one day with pre-kick-off probabilities and results" },
-    { "name": "get_weekly_record", "description": "One week of the open record" },
-    { "name": "get_open_record", "description": "Summary of the whole open record" },
-    { "name": "list_leagues", "description": "Leagues that have matches in the record" },
-    { "name": "list_recorded_matches", "description": "Finished matches, filterable by league and result" }
+    {
+      "name": "list_matches",
+      "description": "Matches for one day: ids, teams, kick-off, status"
+    },
+    {
+      "name": "get_match_analysis",
+      "description": "Pre-kick-off outcome probabilities for one match, and the result once played"
+    },
+    {
+      "name": "get_open_record",
+      "description": "How the model's reads turned out: whole record or one week"
+    }
   ],
-  "compatibility": { "platforms": ["darwin", "win32", "linux"], "runtimes": { "node": ">=18.0.0" } }
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
+  }
 }
