@@ -1,0 +1,9 @@
+node_modules/.cache
+test/
+.github/
+.git/
+Dockerfile
+smithery.yaml
+glama.json
+server.json
+*.mcpb

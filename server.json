@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.aiballfooty/aiball-mcp",
+  "title": "AI Ball — AI football match analysis",
+  "description": "Football match outcome probabilities recorded before kick-off, and an open record of results.",
+  "version": "0.1.0",
+  "websiteUrl": "https://aiball.samagent.ai/en/?src=mcp",
+  "repository": { "url": "https://github.com/aiballfooty/aiball-mcp", "source": "github" },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/aiballfooty/aiball-mcp/releases/download/v0.1.0/aiball-mcp.mcpb",
+      "fileSha256": "REPLACED_AT_RELEASE",
+      "transport": { "type": "stdio" }
+    }
+  ]
+}
