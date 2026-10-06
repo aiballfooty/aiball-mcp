@@ -1,6 +1,6 @@
 {
   "name": "aiball-mcp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Read-only MCP server for AI Ball: football match outcome probabilities and the open record of how they turned out.",
   "type": "module",
   "bin": {

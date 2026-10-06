@@ -31,7 +31,21 @@ Every tool is read-only (`readOnlyHint: true`). Names are available in English (
 
 The server caches each upstream response for five minutes and spaces its requests, so repeated questions do not hit AI Ball's API again.
 
-## Install
+## Hosted version
+
+Prefer not to install anything? The same record is served over MCP at:
+
+```
+https://aiball.samagent.ai/mcp
+```
+
+Streamable HTTP, no sign-in, read-only. It has the three tools below plus `get_match_context` (head-to-head, recent form, injuries and fixtures for finished matches only). Rate limit: 60 requests a minute per IP.
+
+```bash
+claude mcp add --transport http aiball https://aiball.samagent.ai/mcp
+```
+
+## Install (local version)
 
 ### Claude Desktop
 

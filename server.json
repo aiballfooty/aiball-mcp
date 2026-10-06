@@ -3,7 +3,7 @@
   "name": "io.github.aiballfooty/aiball-mcp",
   "title": "AI Ball — AI football match analysis",
   "description": "Football match outcome probabilities recorded before kick-off, and an open record of results.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "websiteUrl": "https://aiball.samagent.ai/en/?src=mcp",
   "repository": {
     "url": "https://github.com/aiballfooty/aiball-mcp",
@@ -17,6 +17,12 @@
       "transport": {
         "type": "stdio"
       }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aiball.samagent.ai/mcp"
     }
   ]
 }

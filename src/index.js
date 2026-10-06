@@ -8,7 +8,7 @@ import { z } from "zod";
 const BASE = (process.env.AIBALL_API_BASE || "https://aiball.samagent.ai/api/v1").replace(/\/$/, "");
 const SITE = "https://aiball.samagent.ai";
 const DISCLAIMER = "For information only. Not advice. 18+.";
-const VERSION = "0.2.0";
+const VERSION = "0.3.0";
 const CACHE_TTL_MS = 5 * 60 * 1000;
 const MIN_INTERVAL_MS = 500;
 

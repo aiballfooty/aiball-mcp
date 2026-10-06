@@ -2,7 +2,7 @@
   "manifest_version": "0.2",
   "name": "aiball-mcp",
   "display_name": "AI Ball — AI football match analysis",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Football match outcome probabilities recorded before kick-off, and the open record of how they turned out.",
   "long_description": "Read-only access to AI Ball's public record. For each match: the model's home / draw / away probabilities as recorded before kick-off, the final score, and whether the most likely outcome happened. For any day, week or the whole record: how many matches went the model's way, next to two baselines on the same matches (always taking the pre-match favourite, and one in three). Misses are counted the same way as hits. No account or API key needed.",
   "author": {
